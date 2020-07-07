@@ -1,5 +1,11 @@
-The folder contain Harris_Corner_detection.py and Harris_Corner_detection.ipynb file
-input image file shape.png and harris.jpg.
-run Harris_Corner_detection.ipynb on google colab or on jupyter to see output.
-output1.png and output2.png are output files for code.
+# Harris Corner Detection
+Corner detection is a method used in computer vision systems to extract certain features of an image. Corner detection is used frequently in video tracking, stitching motion detection and object recognition. Corner detection overlaps with the topic of interest point detection. Harris corner detection to stitch two different images together. It picks corners because, since it is the intersection of two edges, it represents a point in which the directions of these two edges change. The gradient of the image (in both directions) have a high variation, which can be used to detect it.
 
+### The Harris Corner Detector algorithm in simple words is as follows :
+Step 1. It determines which windows (small image patches) produce very large variations in intensity when moved in both X and Y directions (i.e. gradients).
+
+
+Step 2. With each such window found, a score R is computed.
+
+
+Step 3. After applying a threshold to this score, important corners are selected and marked.
