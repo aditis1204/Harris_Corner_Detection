@@ -9,3 +9,6 @@ Step 2. With each such window found, a score R is computed.
 Step 3. After applying a threshold to this score, important corners are selected and marked.
 
 Take the gray-scale of the original image. Apply a Gaussian filter to smooth out any noise. Apply Sobel operator to find the x and y gradient values for every pixel in the grayscale image. For each pixel p in the grayscale image, consider a m*m window around it and compute the corner strength function. Call this its Harris value. Find all pixels that exceed a certain threshold and are the local maxima within a certain window (to prevent redundant dupes of features). Compute a feature descriptor of all such points.
+
+<img src = 'Output/output2.png' />
+<img src = 'Output/output1.png' />
